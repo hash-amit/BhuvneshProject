@@ -1,5 +1,5 @@
 /* ================================================
-   PIONEER CONSULTING SERVICES – Main JS
+   BHUVIX TECHNOLOGIES – Main JS
    ================================================ */
 
 // ── Active nav link ──
