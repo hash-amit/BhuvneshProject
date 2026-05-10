@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Pioneer Consulting Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Extra styles for contact page */
+    .contact-hero {
+      background:
+        radial-gradient(ellipse 60% 60% at 90% 50%, rgba(0,212,255,.07) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 40% at 10% 70%, rgba(255,106,53,.05) 0%, transparent 60%),
+        var(--bg2);
+    }
+    .office-divider {
+      display: flex; align-items: center; justify-content: center;
+      padding: 16px 0;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.78rem; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--muted);
+      gap: 12px;
+    }
+    .office-divider::before, .office-divider::after {
+      content: '';
+      flex: 1; height: 1px;
+      background: var(--border2);
+    }
+    .reach-us-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+      margin-top: 48px;
+    }
+    @media(max-width:768px) { .reach-us-grid { grid-template-columns: 1fr; } }
+    .reach-card {
+      background: var(--card);
+      border: 1px solid var(--border2);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      text-align: center;
+      transition: all .3s;
+    }
+    .reach-card:hover { border-color: var(--border); transform: translateY(-4px); }
+    .reach-card .r-icon { font-size: 2.2rem; margin-bottom: 14px; display: block; }
+    .reach-card h4 { margin-bottom: 8px; }
+    .reach-card p { font-size: 0.9rem; }
+    .reach-card a { color: var(--cyan); }
+    .reach-card a:hover { text-decoration: underline; }
+    .fax-note { font-size: 0.82rem; color: var(--muted); margin-top: 4px; }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">PCS</div>
+      <div class="nav-logo-text">Pioneer <span>Consulting</span></div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="staffing.html">Staffing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta-wrap">
+      <a href="contact.html" class="btn btn-primary nav-cta">Get in Touch</a>
+    </div>
+    <div class="nav-hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ PAGE HEADER ══ -->
+<div class="page-pad"></div>
+<div class="page-header contact-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="sep">/</span>
+      <span>Contact Us</span>
+    </div>
+    <div class="pill">Reach Out</div>
+    <h1>Contact Pioneer Consulting Services</h1>
+    <p>We'd love to hear from you. Reach out directly to our offices in New Jersey or Iowa, or drop us an email — our team is ready to help.</p>
+  </div>
+</div>
+
+<!-- ══ MAIN CONTACT SECTION ══ -->
+<section class="section">
+  <div class="container">
+
+    <!-- Email hero card -->
+    <div class="contact-email-card animate" style="margin-bottom:32px;">
+      <div class="pill" style="margin:0 auto 14px; display:table;">✉️ General Inquiries</div>
+      <h3 style="color:var(--white);margin-bottom:6px;">Send Us an Email</h3>
+      <p style="max-width:420px;margin:0 auto 10px;">For general inquiries, project discussions or partnership opportunities, reach our team directly at:</p>
+      <div class="big-email">
+        <a href="mailto:contact@pioneeritconsulting.com">contact@pioneeritconsulting.com</a>
+      </div>
+      <p style="font-size:0.85rem;margin-top:6px;">Our representative will reach out to you promptly.</p>
+    </div>
+
+    <!-- Office cards -->
+    <div class="office-divider">Our Office Locations</div>
+
+    <div class="contact-grid" style="margin-top:28px;">
+
+      <!-- New Jersey -->
+      <div class="contact-card animate delay-1">
+        <h3>🗽 New Jersey Office</h3>
+        <div class="subtitle">Headquarters — Princeton, NJ</div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div class="contact-item-text">
+            <div class="label">Address</div>
+            <div class="value">
+              3490 US Highway 1,<br />
+              Building 16, Suite 105,<br />
+              Princeton, NJ 08540, USA
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📞</div>
+          <div class="contact-item-text">
+            <div class="label">Phone</div>
+            <div class="value">
+              <a href="tel:+18443027300">844-302-7300</a><br />
+              <a href="tel:+16096089401">609-608-9401</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">✉️</div>
+          <div class="contact-item-text">
+            <div class="label">Email</div>
+            <div class="value">
+              <a href="mailto:contact@pioneeritconsulting.com">contact@pioneeritconsulting.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-item" style="margin-bottom:0;">
+          <div class="contact-item-icon">⏰</div>
+          <div class="contact-item-text">
+            <div class="label">Business Hours</div>
+            <div class="value">Monday – Friday, 9:00 AM – 6:00 PM EST</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Iowa -->
+      <div class="contact-card animate delay-2">
+        <h3>🌽 Iowa Office</h3>
+        <div class="subtitle">Regional Office — West Des Moines, IA</div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div class="contact-item-text">
+            <div class="label">Address</div>
+            <div class="value">
+              1701 48th Street,<br />
+              Suite 280,<br />
+              West Des Moines, Iowa 50266, USA
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📞</div>
+          <div class="contact-item-text">
+            <div class="label">Phone</div>
+            <div class="value">
+              <a href="tel:+15159746534">(515) 974-6534</a><br />
+              <a href="tel:+15153092274">(515) 309-2274</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📠</div>
+          <div class="contact-item-text">
+            <div class="label">Fax</div>
+            <div class="value">(515) 225-7546</div>
+          </div>
+        </div>
+
+        <div class="contact-item" style="margin-bottom:0;">
+          <div class="contact-item-icon">⏰</div>
+          <div class="contact-item-text">
+            <div class="label">Business Hours</div>
+            <div class="value">Monday – Friday, 9:00 AM – 6:00 PM CST</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ways to Reach Us -->
+    <div class="reach-us-grid">
+      <div class="reach-card animate delay-1">
+        <span class="r-icon">📞</span>
+        <h4>Call Us</h4>
+        <p>Reach our New Jersey headquarters directly.<br />
+          <a href="tel:+18443027300">844-302-7300</a> or<br />
+          <a href="tel:+16096089401">609-608-9401</a>
+        </p>
+      </div>
+      <div class="reach-card animate delay-2">
+        <span class="r-icon">✉️</span>
+        <h4>Email Us</h4>
+        <p>Send us your inquiry anytime and our representative will respond promptly.<br />
+          <a href="mailto:contact@pioneeritconsulting.com">contact@pioneeritconsulting.com</a>
+        </p>
+      </div>
+      <div class="reach-card animate delay-3">
+        <span class="r-icon">📠</span>
+        <h4>Fax (Iowa)</h4>
+        <p>You can also reach our Iowa office via fax for document submissions and formal correspondence.</p>
+        <p style="color:var(--text);margin-top:8px;">(515) 225-7546</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ OFFICE MAP VISUAL ══ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head animate">
+      <div class="pill">Our Locations</div>
+      <h2>Serving Clients Across the <span class="u-line">United States</span></h2>
+      <p>With offices in New Jersey and Iowa, PCS is positioned to serve clients across the entire country with localized expertise and national reach.</p>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--border2);border-radius:var(--radius-lg);padding:48px;display:grid;grid-template-columns:1fr auto 1fr;gap:32px;align-items:center;" class="animate">
+      <div class="office-mini">
+        <span class="office-icon">🗽</span>
+        <h4>Princeton, NJ</h4>
+        <p>3490 US Highway 1,<br>Building 16, Suite 105<br>Princeton, NJ 08540</p>
+        <div style="margin-top:14px;">
+          <a href="tel:+18443027300" style="color:var(--cyan);font-family:'Syne',sans-serif;font-size:0.88rem;font-weight:600;">📞 844-302-7300</a>
+        </div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-size:2rem;">🇺🇸</div>
+        <div style="font-family:'Syne',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan);margin-top:8px;">Two Locations</div>
+        <div style="width:2px;height:60px;background:var(--border);margin:12px auto;"></div>
+        <div style="font-size:0.78rem;color:var(--muted);">Nationwide Reach</div>
+      </div>
+      <div class="office-mini">
+        <span class="office-icon">🌽</span>
+        <h4>West Des Moines, IA</h4>
+        <p>1701 48th Street,<br>Suite 280<br>West Des Moines, IA 50266</p>
+        <div style="margin-top:14px;">
+          <a href="tel:+15153092274" style="color:var(--cyan);font-family:'Syne',sans-serif;font-size:0.88rem;font-weight:600;">📞 (515) 309-2274</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ READY TO CONNECT ══ -->
+<div class="cta-banner">
+  <div class="container">
+    <div class="pill">Ready to Connect?</div>
+    <h2>Unlock Business Value with <span style="color:var(--cyan)">Digital Transformation</span></h2>
+    <p>Whether you're ready to start a project or just exploring your options — PCS is here to help. Reach out and let's talk about how we can drive your success.</p>
+    <div class="cta-btns">
+      <a href="mailto:contact@pioneeritconsulting.com" class="btn btn-primary">✉️ Email Us Now</a>
+      <a href="tel:+18443027300" class="btn btn-outline">📞 Call 844-302-7300</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="display:inline-flex;">
+          <div class="nav-logo-icon">PCS</div>
+          <div class="nav-logo-text">Pioneer <span>Consulting</span></div>
+        </a>
+        <p>An innovative IT Consulting firm providing superior technology solutions while offering a rewarding work experience for our consultants. Committed to excellence since 2010.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="index.html">&rsaquo; Home</a></li>
+          <li><a href="about.html">&rsaquo; About Us</a></li>
+          <li><a href="services.html">&rsaquo; Services</a></li>
+          <li><a href="staffing.html">&rsaquo; Staffing</a></li>
+          <li><a href="contact.html">&rsaquo; Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html">&rsaquo; Artificial Intelligence</a></li>
+          <li><a href="services.html">&rsaquo; Blockchain</a></li>
+          <li><a href="services.html">&rsaquo; Cloud Migration</a></li>
+          <li><a href="services.html">&rsaquo; Enterprise Apps</a></li>
+          <li><a href="services.html">&rsaquo; Mobile Development</a></li>
+          <li><a href="services.html">&rsaquo; IoT Solutions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul class="footer-contact">
+          <li><span class="icon">📍</span> Princeton, NJ 08540</li>
+          <li><span class="icon">📍</span> West Des Moines, IA 50266</li>
+          <li><span class="icon">📞</span> 844-302-7300</li>
+          <li><span class="icon">✉️</span> contact@pioneeritconsulting.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p style="color:var(--muted);">&copy; 2025 Pioneer Consulting Services, LLC. All rights reserved.</p>
+      <p style="color:var(--muted);">Princeton, NJ &nbsp;|&nbsp; West Des Moines, IA</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
